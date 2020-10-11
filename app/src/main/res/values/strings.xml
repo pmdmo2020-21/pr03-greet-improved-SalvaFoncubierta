@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">Greet Improved</string>
+    <string name="lblName">Name</string>
+    <string name="lblSurname">Surname</string>
+    <string name="lblTreatment">Treatment</string>
+    <string name="main_btnGreet">Greet</string>
+    <string name="swiPremium">Premium</string>
+    <string name="main_rdbMs">Ms.</string>
+    <string name="main_rdbMrs">Mrs.</string>
+    <string name="main_rdbMr">Mr.</string>
+    <string name="main_chkPolitely">Politely</string>
+    <string name="lblGreetNoPolitely">Hello %1$s %2$s. What`s up?</string>
+    <string name="lblGreetPolitely">Good morning %1$s %2$s. Pleased to meet you.</string>
+    <string name="lblGreet10Times">Buy premium suscription to go on greeting!!</string>
+    <string name="lblCounter">%1$d of 10</string>
+    <string name="invalidName">Required</string>
+    <string name="invalidSurname">Required</string>
+    <plurals name="lblCounterName">
+        <item quantity="one">%1$d char</item>
+        <item quantity="other">%1$d chars</item>
+    </plurals>
+    <plurals name="lblCounterSurname">
+        <item quantity="one">%1$d char</item>
+        <item quantity="other">%1$d chars</item>
+    </plurals>
 </resources>

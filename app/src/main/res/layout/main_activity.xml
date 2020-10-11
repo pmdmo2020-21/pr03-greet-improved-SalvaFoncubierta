@@ -1,10 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/llRoot"
+    android:paddingStart="@dimen/marginLeft"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <!-- TODO -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swtPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swiPremium"
+        android:layout_gravity="end"
+        android:checked="false"/>
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblName"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:imeOptions="actionNext">
+        <requestFocus/>
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblCounterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@plurals/lblCounterName"/>
+
+    <TextView
+        android:id="@+id/lblSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblSurname"/>
+
+    <EditText
+        android:id="@+id/txtSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/lblCounterSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@plurals/lblCounterSurname"/>
+
+    <TextView
+        android:id="@+id/lblTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTreatment"/>
+
+    <RadioGroup
+        android:id="@+id/rdgTreat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rdbMr"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_rdbMr" />
+        <RadioButton
+            android:id="@+id/rdbMrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_rdbMrs" />
+        <RadioButton
+            android:id="@+id/rdbMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_rdbMs" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_chkPolitely"
+        android:checked="true" />
+
+    <Button
+        android:id="@+id/btnGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/main_btnGreet"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/lblCounter"/>
+
+    <TextView
+        android:id="@+id/lblGreetNoPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblGreetNoPolitely"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblGreetPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblGreetPolitely"
+        android:visibility="gone"/>
 
 </LinearLayout>
